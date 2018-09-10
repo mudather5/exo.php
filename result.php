@@ -1,35 +1,21 @@
 <?php
-$nom = $_POST['nom'];
-$prenom = $_POST['prenom'];
-//$sex = $_POST['sex'];
-$age = $_POST['age'];
-$loisirs = $_POST['loisirs'];
-
-echo 'nom: '.$nom.'<br>'.'prénom: '.$prenom.'<br>'.'Age: '.(int)$_POST['age'].' '.'ans'.(int)$loisirs;
 
 
+//var_dump($_POST);
+if (isset($_POST['nom'])   AND isset($_POST['prenom']) AND isset($_POST['gender']) AND isset($_POST['age']) AND isset($_POST['loisir1']) AND isset($_POST['loisir2']) AND isset($_POST['loisir3']))
 
-//if (isset($_POST['nom'])  AND isset($_POST['sex']) AND isset($_POST['prenom']) AND isset($_POST['Age']) AND isset($_POST['loisirs']))
-//
-//{
-//
-//        echo $_POST['nom'].'<br/>'.$_POST['sex'].'<br/>'.$_POST['prenom'].'<br />'.$_POST['Age'].'<br/>'.$_POST['loisirs'];
-//
-//
-//}
-//
-//else
-//
-//{
-//
-// echo 'nom:'.$_POST['nom'].'<br/>'.'prénom:'.$_POST['prenom'].'<br />'.$_POST['sex'].'<br/>'.$_POST['Age'].'<br/>'.$_POST['loisirs'];  
-//
-//}
+{
+
+        echo'Nom:'. $_POST['nom'].'<br/>'.'Prénom:'.$_POST['prenom'].'<br/>'.'Sex:'.$_POST['gender'].'<br/>'.'Age:'.(int)$_POST['age'].'ans'.'<br/>'.'Loisirs: '.$_POST['loisir1'].' '.$_POST['loisir3'].' '.$_POST['loisir2'];
 
 
-//$username = $_POST['username'];
-//$password = $_POST['password'];
-//
-//echo $username.'<br/>'.$password;
-// 
+}
+
+else
+
+{
+    echo "vous n'avez pas lotirisation d'accer!";
+
+}
+
 ?>
